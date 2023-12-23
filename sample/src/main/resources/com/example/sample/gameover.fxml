@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.SceneController">
+   <children>
+      <Rectangle fx:id="yesCherry1" arcHeight="50.0" arcWidth="50.0" fill="#ff9e9e" height="160.0" layoutX="118.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0" />
+      <Label fx:id="yesCherry2" alignment="CENTER" layoutX="181.0" layoutY="118.0" prefHeight="95.0" prefWidth="234.0" text="Revive Hero?">
+         <font>
+            <Font name="Dubai Medium" size="41.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="yesCherry3" arcHeight="5.0" arcWidth="5.0" fill="#ff2c2c" height="35.0" layoutX="161.0" layoutY="218.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Button fx:id="yesCherry4" layoutX="160.0" layoutY="220.0" mnemonicParsing="false" onMousePressed="#playAfterRevival" opacity="0.0" prefHeight="31.0" prefWidth="119.0" text="Go Back" />
+      <Label fx:id="yesCherry5" layoutX="201.0" layoutY="214.0" onMousePressed="#playAfterRevival" text="Yes">
+         <font>
+            <Font name="Dubai Medium" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="yesCherry6" arcHeight="5.0" arcWidth="5.0" fill="#ff2c2c" height="35.0" layoutX="317.0" layoutY="218.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Button fx:id="yesCherry7" layoutX="316.0" layoutY="220.0" mnemonicParsing="false" onMousePressed="#rejectRevival" opacity="0.0" prefHeight="31.0" prefWidth="119.0" text="Go Back" />
+      <Label fx:id="yesCherry8" layoutX="362.0" layoutY="214.0" onMousePressed="#rejectRevival" text="No">
+         <font>
+            <Font name="Dubai Medium" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="noCherries1" arcHeight="50.0" arcWidth="50.0" fill="#ff9e9e" height="160.0" layoutX="118.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0" />
+      <Label fx:id="noCherries2" alignment="CENTER" layoutX="181.0" layoutY="109.0" prefHeight="95.0" prefWidth="234.0" text="Not Enough Cherries">
+         <font>
+            <Font name="Dubai Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="noCherries3" alignment="CENTER" layoutX="175.0" layoutY="173.0" text="Minimum Cherries Required: 5">
+         <font>
+            <Font name="Dubai Medium" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="noCherries4" arcHeight="5.0" arcWidth="5.0" fill="#ff2c2c" height="35.0" layoutX="232.0" layoutY="218.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Button fx:id="noCherries5" layoutX="231.0" layoutY="220.0" mnemonicParsing="false" onMousePressed="#notEnoughCherries" opacity="0.0" prefHeight="31.0" prefWidth="119.0" text="Go Back" />
+      <Label fx:id="noCherries6" layoutX="250.0" layoutY="214.0" onMousePressed="#notEnoughCherries" text="Go Back">
+         <font>
+            <Font name="Dubai Medium" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="406.0" fitWidth="602.0" layoutY="-5.0">
+         <image>
+            <Image url="@assets/bg3.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="86.0" layoutX="372.0" layoutY="270.0" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="ROUND" strokeMiterLimit="50.0" strokeType="INSIDE" strokeWidth="0.0" width="95.0">
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect></Rectangle>
+      <ImageView fitHeight="128.0" fitWidth="163.0" layoutX="360.0" layoutY="249.0" onMousePressed="#restartGame" preserveRatio="true">
+         <image>
+            <Image url="@assets/restart.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="86.0" layoutX="115.0" layoutY="270.0" onMousePressed="#switchToHomeScreen" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="ROUND" strokeMiterLimit="50.0" strokeType="INSIDE" strokeWidth="0.0" width="95.0">
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="74.0" fitWidth="70.0" layoutX="127.0" layoutY="278.0" onMousePressed="#switchToHomeScreen" preserveRatio="true">
+         <image>
+            <Image url="@assets/home.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="92.0" fitWidth="263.0" layoutX="160.0" layoutY="14.0">
+         <image>
+            <Image url="@assets/gv.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efecec" height="86.0" layoutX="243.0" layoutY="270.0" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="ROUND" strokeMiterLimit="50.0" strokeType="INSIDE" strokeWidth="0.0" width="95.0">
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="80.0" fitWidth="88.0" layoutX="247.0" layoutY="273.0" onMousePressed="#revive">
+         <image>
+            <Image url="@assets/revive.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="372.0" layoutY="265.0" mnemonicParsing="false" onMousePressed="#restartGame" opacity="0.0" prefHeight="92.0" prefWidth="95.0" text="Button" />
+      <ImageView blendMode="DARKEN" fitHeight="25.0" fitWidth="25.0" layoutX="552.0" layoutY="26.0">
+         <image>
+            <Image url="@assets/cherry.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cherryCount" blendMode="DARKEN" layoutX="510.0" layoutY="24.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="44.0" style="-fx-background-color: transparent;" text="0" textFill="#180a0a">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="81.0" fitWidth="200.0" layoutX="314.0" layoutY="110.0">
+         <image>
+            <Image url="@assets/highscore.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="134.0" layoutX="104.0" layoutY="99.0">
+         <image>
+            <Image url="@assets/score.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" alignment="CENTER" layoutX="125.0" layoutY="154.0" prefHeight="95.0" prefWidth="88.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="highLabel" alignment="CENTER" layoutX="376.0" layoutY="154.0" prefHeight="95.0" prefWidth="88.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

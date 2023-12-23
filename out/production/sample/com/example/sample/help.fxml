@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="184.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="97.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="184.0" layoutX="149.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="66.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="184.0" layoutX="355.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="97.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#282828" height="66.0" layoutX="-4.0" layoutY="344.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="45.0" layoutX="-8.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+      <ImageView blendMode="DARKEN" fitHeight="85.0" fitWidth="103.0" layoutX="132.0" layoutY="102.0">
+         <image>
+            <Image url="@assets/hero1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#282828" height="4.0" layoutX="14.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="202.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#282828" height="4.0" layoutX="187.0" layoutY="115.0" rotate="120.0" stroke="BLACK" strokeType="INSIDE" width="97.0" />
+      <Button layoutX="243.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: red;" text="LET'S PLAY" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="203.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: black;" text="HOW TO PLAY ?" textFill="#fffcfc">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="19.0" layoutX="258.0" layoutY="200.0" rotate="120.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="19.0" layoutX="276.0" layoutY="192.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="19.0" layoutX="293.0" layoutY="200.0" rotate="60.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+      <ImageView blendMode="DARKEN" fitHeight="32.0" fitWidth="44.0" layoutX="254.0" layoutY="146.0" style="-fx-blend-mode: white;">
+         <image>
+            <Image url="@assets/cherry.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="45.0" fitWidth="82.0" layoutX="242.0" layoutY="223.0">
+         <image>
+            <Image url="@assets/hand.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
