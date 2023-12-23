@@ -1,11 +1,6 @@
 # StickHero
 The game is a replica of a popular game Stick Hero
 
-## Group details
-- Group Number: 50
-- Member 1: Aarzoo (2022008)
-- Member 2: Anushka Srivastava (2022086)
-
 ## Running the code
 Run the main class from `App.java`.
 - Change the directory to `/sample` before compiling the `pom.xml` file.
